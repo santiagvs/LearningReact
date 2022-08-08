@@ -5,6 +5,7 @@ import ManageData from './components/ManageData'
 import ListRender from './components/ListRender'
 import ConditionalRender from './components/ConditionalRender'
 import ShowUserName from './components/ShowUserName';
+import CarDetails from './components/CarDetails'
 
 function App() {
   const [userName] = useState('Maria')
@@ -24,6 +25,7 @@ function App() {
       <ListRender />
       <ConditionalRender />
       <ShowUserName name={userName} />
+      <CarDetails brand="VW" km={10000} color="Azul" />
     </div>
   );
 }
